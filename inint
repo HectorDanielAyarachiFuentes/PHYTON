@@ -1,0 +1,21 @@
+class Persona:
+# Aquí, al crear una nueva Persona, le damos un nombre y una edad que se almacenan en el objeto.
+    def __init__(self, nombre, edad):
+        print("¡Se ha creado el objeto!")
+        self.nombre = nombre
+        self.edad = edad
+
+p = Persona("Ana", 25)
+print(p.nombre)
+print(p.edad)
+
+class EjemploDel:
+    def __init__(self):
+        print("¡Se ha creado el objeto!")
+
+    def __del__(self):
+        print("¡El objeto está siendo destruido!")
+
+obj = EjemploDel()
+del obj  # Objeto siendo destruido
+
